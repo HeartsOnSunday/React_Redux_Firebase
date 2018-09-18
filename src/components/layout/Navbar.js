@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SignedInLinks from "./SignedInLinks";
+import SignedOutLinks from "./SignedInLinks";
 
 const Navbar = () => {
   return (
@@ -8,6 +10,8 @@ const Navbar = () => {
         <Link to="/" className="brand-logo">
           Stupid Mario Plan
         </Link>
+        <SignedInLinks />
+        <SignedOutLinks />
       </div>
     </nav>
   );
